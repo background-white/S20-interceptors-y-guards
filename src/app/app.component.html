@@ -1,0 +1,16 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-4 offset-4">
+      <h3 class="mt-5">Usuarios</h3>
+      <button type="button" (click)="listar()">Mostrar Usuarios</button>
+      <ul>
+        <li *ngFor="let user of users">{{user.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
